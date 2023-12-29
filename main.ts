@@ -5,8 +5,9 @@ basic.forever(function () {
     moisture = moisture / 300
     index = 0
     while (index <= Math.round(moisture)) {
+        led.setBrightness(index * 10 + 2)
         basic.showNumber(index)
         index += 1
     }
-    basic.pause(60000)
+    basic.pause(600000)
 })
